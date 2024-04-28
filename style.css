@@ -1,0 +1,88 @@
+:root {
+    --font-dark-color: #000000;
+    --font-color: #BBBABA;
+    --font-active-color: #41B06E;
+
+    p, ul, li, a {
+        margin: 0;
+        width: auto;
+    }
+
+    * {
+        color: var(--font-color);
+        font-family: 'League Spartan';
+    }
+    li>a {
+        text-decoration: none;
+        color: var(--font-color);
+        font-size: 24px;
+    }
+    a[href="#"] {
+        color: var(--font-active-color);
+    }
+    .highlight-primary {
+        color: var(--font-active-color);
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+header {
+    padding: 0 40px;
+    margin: 44px auto;
+    max-width: 1600px !important;
+    line-height: 1.45;
+}
+header>ul {
+    gap: 37px;
+}
+
+section {
+    max-width: 1600px !important;
+    padding: 44px 40px !important;
+    margin: auto;
+}
+section>p {
+    padding: 20px 0;
+    font-size: 22px;
+    width: 75ch;
+    line-height: 1.1;
+}
+.section-heading {
+    margin: 0;
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--font-dark-color);
+    letter-spacing: 160% !important;
+}
+.section-heading>a {
+    color: var(--font-dark-color);
+}
+
+hr{
+    max-width: 1520px !important;
+    margin: 55px auto;
+    padding: 0;
+    border-bottom: #000000a4 1px solid;
+}
+
+.btn {
+    width: 32.5% !important;
+    background-color: var(--font-active-color);
+    line-height: 1;   
+    padding: 44px 32px;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    transition: 100ms ease-in-out;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    background-color: var(--font-active-color) !important;
+    opacity: 0.9;
+    color: white;
+}
